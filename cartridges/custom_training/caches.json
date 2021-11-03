@@ -1,0 +1,12 @@
+{
+    "caches": [
+        {
+            "id": "postalCodeConfigJSON",
+            "expireAfterSeconds": 2592000
+        },
+        {
+            "id": "phoneConfigJSON",
+            "expireAfterSeconds": 2592000
+        }
+    ]
+}

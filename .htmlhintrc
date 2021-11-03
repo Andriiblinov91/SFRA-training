@@ -1,0 +1,105 @@
+{
+    "tagname-lowercase": true,
+    "attr-lowercase": false,
+    "attr-value-double-quotes": false,
+    "doctype-first": false,
+    "max-lenght" : 200,
+    "tag-pair": true,
+    "spec-char-escape": false,
+    "id-unique": false,
+    "src-not-empty": true,
+    "attr-no-duplication": true,
+    "title-require": false,
+    "doctype-html5": true,
+    "space-tab-mixed-disabled" : "space",
+    "inline-style-disabled" : false,
+    "tag-self-close" : true,
+    "tags-check" : {
+        "isslot": {
+            "selfclosing": true,
+            "attrsRequired": ["id", ["context", "global", "category", "folder"], "description"]
+        },
+        "iscache": {
+            "selfclosing": true,
+            "attrsRequired": ["hour|minute", ["type", "relative", "daily"]],
+            "attrsOptional": [["varyby", "price_promotion"]]
+        },
+        "isdecorate": {
+            "selfclosing": false,
+            "attrsRequired": ["template"]
+        },
+        "isreplace": {
+            "selfclosing": true
+        },
+        "isinclude": {
+            "selfclosing": true,
+            "attrsRequired": ["template|url"]
+        },
+        "iscontent": {
+            "selfclosing": true,
+            "attrsOptional": [["htmlcontent", "on", "off", "html", "xml", "wml"], ["compact", "true", "false", "encoding"],
+            "attrsRequired": ["type", "charset"]
+        },
+        "ismodule": {
+            "selfclosing": true,
+            "attrsRequired": ["template", "name"]
+        },
+        "isobject": {
+            "selfclosing": false,
+            "attrsRequired": ["object", ["view", "none", "searchhit", "recommendation", "setproduct", "detail"]]
+        },
+        "isset": {
+            "selfclosing": true,
+            "attrsRequired": ["name", "value", ["scope", "session", "request", "page"]]
+        },
+        "iscomponent": {
+            "selfclosing": true,
+            "attrsRequired": ["pipeline"]
+        },
+        "iscontinue": {
+            "selfclosing": true
+        },
+        "isbreak": {
+            "selfclosing": true
+        },
+        "isnext": {
+            "selfclosing": true
+        },
+        "isscript": {
+            "selfclosing": false
+        },
+        "iselse": {
+            "selfclosing": true
+        },
+        "isloop": {
+            "selfclosing": false,
+            "attrsRequired": ["items|iterator|begin", "alias|var|end"]
+        },
+        "isif": {
+            "selfclosing": false,
+            "attrsRequired": ["condition"]
+        },
+        "iselseif": {
+            "selfclosing": true,
+            "attrsRequired": ["condition"]
+        },
+        "isprint": {
+            "selfclosing": true,
+            "attrsRequired": ["value"],
+            "attrsOptional": [["encoding", "on", "off"], ["timezone", "SITE", "INSTANCE", "utc"]]
+        },
+        "isstatus": {
+            "selfclosing": true,
+            "attrsRequired": ["value"]
+        },
+        "isredirect": {
+            "selfclosing": true,
+            "attrsOptional": [["permanent", "true", "false"]],
+            "attrsRequired": ["location"]
+        },
+        "isinputfield": {
+            "selfclosing": true,
+            "attrsRequired": ["type", "formfield"]
+        }
+    }
+}
